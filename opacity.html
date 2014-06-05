@@ -1,0 +1,23 @@
+d>
+
+<title>opacity</title>
+<script language="javascript">
+  function Opac()
+{
+document.body.style.backgroundColor="red";
+var i=document.getElementById('opacvalue').value;
+document.getElementById('img1').style.opacity=parseInt(i)/100;
+document.getElementById('opacvalue').value="";
+}
+</script>
+</head>
+<body>
+<form name="opacity">
+<h3><b><i><u> Applying opacity to the image</u></i></b><br></h3>
+<b>Enter the value(from 1 to 100):</b> 
+<input type="text" id="opacvalue"><br><br><br>
+<input type="Button" value="click to view changes " onClick="return Opac()"/><br><br><br>
+<img src="C:\Users\acer\Pictures\PHOTOS\AKAM\a\20130111_192159.jpg" id="img1"  width="250" height="250"/>
+</form>
+</body>
+</html>
